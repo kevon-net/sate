@@ -1,5 +1,5 @@
-export const companyName = '';
-export const appName = '';
+export const companyName = 'Sate';
+export const appName = 'Sate';
 
 export const phones = {
   main: '(254) 123 456-789',
