@@ -38,7 +38,7 @@ const appTheme = createTheme({
   },
 
   headings: {
-    fontFamily: 'var(--font-geist-sans)',
+    fontFamily: 'var(--font-poppins-sans)',
   },
 
   components: {
