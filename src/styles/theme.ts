@@ -37,6 +37,10 @@ const appTheme = createTheme({
     ],
   },
 
+  headings: {
+    fontFamily: 'var(--font-geist-sans)',
+  },
+
   components: {
     Container: Container.extend({
       defaultProps: {
