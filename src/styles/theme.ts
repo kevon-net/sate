@@ -1,7 +1,7 @@
 'use client';
 
 import cx from 'clsx';
-import { Container, createTheme, Menu, Modal } from '@mantine/core';
+import { Container, createTheme, Drawer, Menu, Modal } from '@mantine/core';
 import classesContainer from './mantine/container.module.scss';
 
 const appTheme = createTheme({
@@ -55,6 +55,14 @@ const appTheme = createTheme({
       defaultProps: {
         transitionProps: {
           transition: 'fade',
+          duration: 250,
+        },
+      },
+    }),
+
+    Drawer: Drawer.extend({
+      defaultProps: {
+        transitionProps: {
           duration: 250,
         },
       },
