@@ -8,6 +8,7 @@ import { navLinks } from '@/data/links';
 import { IconSearch, IconShoppingBag } from '@tabler/icons-react';
 import { ICON_STROKE_WIDTH, ICON_WRAPPER_SIZE } from '@/data/constants';
 import ModalSearch from '@/components/common/modals/search';
+import MenuCart from '@/components/common/menu/cart';
 import classes from './main.module.scss';
 
 export default function Main({ type }: { type?: 'affix' }) {
@@ -78,31 +79,33 @@ export default function Main({ type }: { type?: 'affix' }) {
               </Group>
             </ModalSearch>
 
-            <ActionIcon
-              size={ICON_WRAPPER_SIZE}
-              variant={'transparent'}
-              style={{ overflow: 'visible' }}
-              color={
-                type == 'affix'
-                  ? 'var(--mantine-color-text)'
-                  : 'var(--mantine-color-body)'
-              }
-            >
-              <Indicator
-                inline
-                label="5"
-                size={16}
-                position="bottom-end"
-                offset={4}
+            <MenuCart>
+              <ActionIcon
+                size={ICON_WRAPPER_SIZE}
+                variant={'transparent'}
+                style={{ overflow: 'visible' }}
+                color={
+                  type == 'affix'
+                    ? 'var(--mantine-color-text)'
+                    : 'var(--mantine-color-body)'
+                }
               >
-                <Group>
-                  <IconShoppingBag
-                    size={ICON_WRAPPER_SIZE}
-                    stroke={ICON_STROKE_WIDTH}
-                  />
-                </Group>
-              </Indicator>
-            </ActionIcon>
+                <Indicator
+                  inline
+                  label="5"
+                  size={16}
+                  position="bottom-end"
+                  offset={4}
+                >
+                  <Group>
+                    <IconShoppingBag
+                      size={ICON_WRAPPER_SIZE}
+                      stroke={ICON_STROKE_WIDTH}
+                    />
+                  </Group>
+                </Indicator>
+              </ActionIcon>
+            </MenuCart>
           </Group>
         </Group>
       </Group>
