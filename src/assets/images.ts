@@ -5,13 +5,9 @@ const iconUrl = `https://img.icons8.com`;
 
 export const images = {
   brand: {
-    logo: {
-      light: `${imageUrl}/logos/brand/logo-light.png`,
-      dark: `${imageUrl}/logos/brand/logo-dark.png`,
-    },
     icon: {
-      light: `${imageUrl}/avatars/brand/icon/icon-light.png`,
-      dark: `${imageUrl}/avatars/brand/icon/icon-dark.png`,
+      default: `${imageUrl}/brand/icon/default.png`,
+      meta: `${imageUrl}/brand/icon/meta.png`,
     },
   },
 
