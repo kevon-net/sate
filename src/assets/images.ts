@@ -9,6 +9,17 @@ export const images = {
       default: `${imageUrl}/brand/icon/default.png`,
       meta: `${imageUrl}/brand/icon/meta.png`,
     },
+
+    logo: {
+      default: {
+        light: `${imageUrl}/brand/logo/default/light.png`,
+        dark: `${imageUrl}/brand/logo/default/dark.png`,
+      },
+      meta: {
+        light: `${imageUrl}/brand/logo/meta/light.png`,
+        dark: `${imageUrl}/brand/logo/meta/dark.png`,
+      },
+    },
   },
 
   icons: {
