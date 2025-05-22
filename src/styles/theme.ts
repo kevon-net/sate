@@ -5,7 +5,7 @@ import { Container, createTheme } from '@mantine/core';
 import classesContainer from './mantine/container.module.scss';
 
 const appTheme = createTheme({
-  primaryColor: 'blue',
+  primaryColor: 'pri',
   defaultRadius: 'sm',
   primaryShade: { light: 4, dark: 4 },
   cursorType: 'pointer',
