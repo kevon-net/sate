@@ -29,7 +29,7 @@ export default function Cart({ children }: { children: React.ReactNode }) {
       <MenuDropdown p={'sm'}>
         <Stack gap={'xs'}>
           {cartItems.map((ci, i) => (
-            <>
+            <React.Fragment key={i}>
               <Grid>
                 <GridCol span={2.5}>
                   <ImageDefault
@@ -78,7 +78,7 @@ export default function Cart({ children }: { children: React.ReactNode }) {
               </Grid>
 
               {i >= 0 && <Divider />}
-            </>
+            </React.Fragment>
           ))}
         </Stack>
 
