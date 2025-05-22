@@ -12,6 +12,8 @@ export default function Home() {
 
           <p>Save and see your changes instantly.</p>
         </Stack>
+
+        <FooterMain />
       </main>
     </LayoutPage>
   );

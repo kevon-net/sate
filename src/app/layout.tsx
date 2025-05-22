@@ -4,7 +4,7 @@ import {
   MantineProvider,
   mantineHtmlProps,
 } from '@mantine/core';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Poppins, Geist_Mono } from 'next/font/google';
 
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
@@ -20,9 +20,10 @@ import appResolver from '@/styles/resolver';
 import { appName } from '@/data/app';
 import { linkify } from '@/utilities/formatters/string';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const poppinsSans = Poppins({
+  variable: '--font-poppins-sans',
   subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 const geistMono = Geist_Mono({
@@ -49,7 +50,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
 
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${poppinsSans.variable} ${geistMono.variable}`}>
         <MantineProvider
           theme={appTheme}
           cssVariablesResolver={appResolver}
