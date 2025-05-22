@@ -1,0 +1,22 @@
+.navbar {
+  background-color: transparent;
+  color: var(--mantine-color-body);
+}
+
+.navbarAffix {
+  background-color: var(--mantine-color-body);
+  border-bottom: 0.5px solid var(--mantine-color-default-border);
+}
+
+.link {
+  color: var(--mantine-color-body);
+  transition: 0.25s all ease;
+
+  @include mantine.hover {
+    color: var(--mantine-color-pri-4);
+  }
+}
+
+.linkAffix {
+  color: var(--mantine-color-text);
+}
