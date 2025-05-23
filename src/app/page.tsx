@@ -5,6 +5,7 @@ import HeroHome from '@/components/layout/heros/home';
 import LayoutSection from '@/components/layout/section';
 import {
   Box,
+  Button,
   Card,
   Divider,
   Flex,
@@ -186,6 +187,47 @@ export default function Home() {
               ))}
             </Grid>
           </Stack>
+        </LayoutSection>
+
+        <LayoutSection
+          id={'cta-event'}
+          padded={SECTION_SPACING * 2}
+          c={'var(--mantine-color-white)'}
+          pos={'relative'}
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
+          }}
+        >
+          <Group justify="center">
+            <Card
+              maw={{ lg: '40%' }}
+              bg={'var(--mantine-color-dark-7)'}
+              c={'var(--mantine-color-white)'}
+              padding={SECTION_SPACING / 1.5}
+            >
+              <Stack ta={'center'} align="center">
+                <div>
+                  <Title order={2} fz={'var(--mantine-h1-font-size)'}>
+                    Celebrate
+                  </Title>
+
+                  <Text>a Special Event with us!</Text>
+                </div>
+
+                <Text c={'dimmed'}>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt.
+                </Text>
+
+                <Button mt={'md'}>Contact Us</Button>
+              </Stack>
+            </Card>
+          </Group>
         </LayoutSection>
 
         <FooterMain />
