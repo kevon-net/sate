@@ -80,7 +80,11 @@ export default function Main({ type }: { type?: 'affix' }) {
 
                 if (!nl.subLinks) return link;
 
-                return <MenuNavbar links={nl.subLinks}>{link}</MenuNavbar>;
+                return (
+                  <MenuNavbar key={i} links={nl.subLinks}>
+                    {link}
+                  </MenuNavbar>
+                );
               })}
 
               <Button
