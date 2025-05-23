@@ -1,0 +1,31 @@
+.card {
+  position: relative;
+
+  @include mantine.hover {
+    .image {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  transform: scale(1.15);
+  transition: 0.5s all ease;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}

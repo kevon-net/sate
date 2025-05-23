@@ -2,6 +2,7 @@ import LayoutPage from '@/components/layout/page';
 import { Stack } from '@mantine/core';
 import FooterMain from '@/components/layout/footers/main';
 import AffixNavbar from '@/components/common/affixi/navbar';
+import HeroHome from '@/components/layout/heros/home';
 
 export default function Home() {
   return (
@@ -9,19 +10,7 @@ export default function Home() {
       <main>
         <AffixNavbar />
 
-        <Stack
-          py={'xl'}
-          align="center"
-          justify={'center'}
-          h={'100vh'}
-          bg={'gray.4'}
-        >
-          <p>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </p>
-
-          <p>Save and see your changes instantly.</p>
-        </Stack>
+        <HeroHome />
 
         <FooterMain />
       </main>
