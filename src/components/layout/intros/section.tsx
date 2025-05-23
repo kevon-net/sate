@@ -9,23 +9,26 @@ export default function Section({
   props,
   options,
 }: {
-  props: { subTitle?: string; title: string; desc?: string };
+  props: { subTitle?: string | React.ReactNode; title: string; desc?: string };
   options?: { alignment?: 'start' | 'end'; spacing?: boolean };
 }) {
   return (
     <LayoutSection id={'layout-intro-section'} containerized={false}>
       <Stack>
-        {props.subTitle && (
-          <Text
-            fw={'bold'}
-            ta={options?.alignment || 'center'}
-            c={'pri.6'}
-            tt={'uppercase'}
-            fz={'sm'}
-          >
-            {props.subTitle}
-          </Text>
-        )}
+        {props.subTitle &&
+          (typeof props.subTitle == 'string' ? (
+            <Text
+              fw={'bold'}
+              ta={options?.alignment || 'center'}
+              c={'pri.6'}
+              tt={'uppercase'}
+              fz={'sm'}
+            >
+              {props.subTitle}
+            </Text>
+          ) : (
+            props.subTitle
+          ))}
 
         <LayoutSection
           id="layout-intro-section-desc"
