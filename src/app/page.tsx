@@ -23,6 +23,7 @@ import { ICON_STROKE_WIDTH, SECTION_SPACING } from '@/data/constants';
 import IntroSection from '@/components/layout/intros/section';
 import CardCtaMenu from '@/components/common/cards/cta/menu';
 import { menuCtaList } from '@/data/menu';
+import TabReservation from '@/components/common/tabs/reservation';
 
 export default function Home() {
   return (
@@ -228,6 +229,59 @@ export default function Home() {
               </Stack>
             </Card>
           </Group>
+        </LayoutSection>
+
+        <LayoutSection
+          id={'reservation'}
+          padded={SECTION_SPACING * 2}
+          style={{
+            backgroundImage: `url(${images.bg.pattern.menu})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          <Grid gutter={'xl'} align="center">
+            <GridCol span={{ base: 12, md: 6 }}>
+              <Flex justify={{ lg: 'end' }} pr={{ lg: 'xl' }}>
+                <ImageDefault
+                  src={
+                    'https://images.unsplash.com/photo-1735190093631-d66ecd1bc433?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  }
+                  alt={'about image'}
+                  height={{ lg: 480 }}
+                  width={{ lg: '70%' }}
+                  style={{
+                    boxShadow: '8px 8px rgba(0,0,0,0.075)',
+                  }}
+                />
+              </Flex>
+            </GridCol>
+
+            <GridCol span={{ base: 12, md: 6 }}>
+              <IntroSection
+                props={{
+                  title: 'Reserve a table',
+                  desc: 'or Call us at 0344 32423453',
+                  subTitle: (
+                    <Group gap={0}>
+                      <Divider
+                        size={ICON_STROKE_WIDTH}
+                        w={{ lg: 60 }}
+                        color="pri"
+                      />
+                      <Divider size={ICON_STROKE_WIDTH} w={{ lg: 60 }} />
+                    </Group>
+                  ),
+                }}
+                options={{ alignment: 'start' }}
+              />
+
+              <Stack mt={'xl'}>
+                <TabReservation />
+              </Stack>
+            </GridCol>
+          </Grid>
         </LayoutSection>
 
         <FooterMain />
