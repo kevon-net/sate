@@ -20,6 +20,15 @@ export const images = {
     },
   },
 
+  bg: {
+    pattern: {
+      menu: `${imageUrl}/bg/pattern-menu.jpg`,
+    },
+  },
+
+  signature: `${imageUrl}/signature.png`,
+  bannerCtaMenu: `${imageUrl}/banner-cta-menu.svg`,
+
   icons: {
     social: {
       facebook: `${iconUrl}/?size=100&id=13912&format=png&color=000000`,
