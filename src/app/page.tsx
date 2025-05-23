@@ -4,7 +4,6 @@ import AffixNavbar from '@/components/common/affixi/navbar';
 import HeroHome from '@/components/layout/heros/home';
 import LayoutSection from '@/components/layout/section';
 import {
-  Box,
   Button,
   Card,
   Divider,

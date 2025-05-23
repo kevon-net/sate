@@ -4,7 +4,6 @@ import {
   Text,
   MenuTarget,
   MenuDropdown,
-  MenuDivider,
   Group,
   Title,
   Button,
