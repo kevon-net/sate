@@ -13,7 +13,12 @@ export default function Home() {
 
       <Grid gutter={0} mt={5}>
         {cardContent.map((cc, i) => (
-          <GridCol key={i} span={{ lg: 4 }} px={i == 1 ? 5 : 0}>
+          <GridCol
+            key={i}
+            span={{ md: 4 }}
+            py={{ base: i == 1 ? 5 : 0, md: 0 }}
+            px={{ md: i == 1 ? 5 : 0 }}
+          >
             <Anchor component={Link} href={cc.link} underline="never">
               <CardHero props={cc} />
             </Anchor>
