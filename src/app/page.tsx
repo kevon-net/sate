@@ -46,14 +46,14 @@ export default function Home() {
         >
           <Grid gutter={'xl'} align="center">
             <GridCol span={{ base: 12, md: 6 }}>
-              <Flex justify={{ lg: 'end' }} pr={{ lg: 'xl' }}>
+              <Flex justify={{ md: 'end' }} pr={{ md: 'xl' }}>
                 <ImageDefault
                   src={
                     'https://images.unsplash.com/photo-1538128844159-f08f41bfb169?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                   }
                   alt={'about image'}
-                  height={{ lg: 400 }}
-                  width={{ lg: '70%' }}
+                  height={{ base: 320, lg: 400 }}
+                  width={{ base: '100%', md: '80%', lg: '70%' }}
                   style={{
                     boxShadow: '8px 8px rgba(0,0,0,0.075)',
                   }}
@@ -70,10 +70,13 @@ export default function Home() {
                     <Group gap={0}>
                       <Divider
                         size={ICON_STROKE_WIDTH}
-                        w={{ lg: 60 }}
+                        w={{ base: 40, lg: 60 }}
                         color="pri"
                       />
-                      <Divider size={ICON_STROKE_WIDTH} w={{ lg: 60 }} />
+                      <Divider
+                        size={ICON_STROKE_WIDTH}
+                        w={{ base: 40, lg: 60 }}
+                      />
                     </Group>
                   ),
                 }}
@@ -139,7 +142,7 @@ export default function Home() {
                 <GridCol key={i} span={{ md: 6 }}>
                   <Card padding={0} bg={'transparent'}>
                     <Grid align="center" gutter={0}>
-                      <GridCol span={2}>
+                      <GridCol span={{ base: 3.5, xs: 2, md: 3, lg: 2 }}>
                         <ImageDefault
                           src={li.image}
                           alt={li.title}
@@ -149,12 +152,12 @@ export default function Home() {
                         />
                       </GridCol>
 
-                      <GridCol span={10}>
+                      <GridCol span={{ base: 8.5, xs: 10, md: 9, lg: 10 }}>
                         <div>
                           <Group grow preventGrowOverflow={false} w={'100%'}>
                             <Title
                               order={2}
-                              fz={'md'}
+                              fz={{ base: 'sm', md: 'md' }}
                               fw={500}
                               maw={'fit-content'}
                             >
@@ -205,7 +208,7 @@ export default function Home() {
         >
           <Group justify="center">
             <Card
-              maw={{ lg: '40%' }}
+              maw={{ xs: '75%', sm: '60%', md: '50%', lg: '40%' }}
               bg={'var(--mantine-color-dark-7)'}
               c={'var(--mantine-color-white)'}
               padding={SECTION_SPACING / 1.5}
@@ -243,14 +246,14 @@ export default function Home() {
         >
           <Grid gutter={'xl'} align="center">
             <GridCol span={{ base: 12, md: 6 }}>
-              <Flex justify={{ lg: 'end' }} pr={{ lg: 'xl' }}>
+              <Flex justify={{ md: 'end' }} pr={{ md: 'xl' }}>
                 <ImageDefault
                   src={
                     'https://images.unsplash.com/photo-1735190093631-d66ecd1bc433?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                   }
                   alt={'about image'}
-                  height={{ lg: 480 }}
-                  width={{ lg: '70%' }}
+                  height={{ base: 360, md: 420, lg: 480 }}
+                  width={{ base: '100%', md: '80%', lg: '70%' }}
                   style={{
                     boxShadow: '8px 8px rgba(0,0,0,0.075)',
                   }}
@@ -267,10 +270,13 @@ export default function Home() {
                     <Group gap={0}>
                       <Divider
                         size={ICON_STROKE_WIDTH}
-                        w={{ lg: 60 }}
+                        w={{ base: 30, lg: 60 }}
                         color="pri"
                       />
-                      <Divider size={ICON_STROKE_WIDTH} w={{ lg: 60 }} />
+                      <Divider
+                        size={ICON_STROKE_WIDTH}
+                        w={{ base: 30, lg: 60 }}
+                      />
                     </Group>
                   ),
                 }}

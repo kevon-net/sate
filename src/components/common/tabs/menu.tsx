@@ -29,7 +29,7 @@ export default function Menu() {
       onChange={setActiveTab}
       styles={{
         panel: {
-          padding: 'var(--mantine-spacing-xl)',
+          padding: 'var(--mantine-spacing-md)',
           backgroundColor: 'var(--mantine-color-gray-1)',
         },
       }}

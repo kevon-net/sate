@@ -25,7 +25,7 @@ export default function Menu() {
         src={
           'https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         }
-        p={{ lg: SECTION_SPACING }}
+        p={{ base: 'md', md: SECTION_SPACING }}
       >
         <Overlay backgroundOpacity={0.5} style={{ zIndex: 1 }} />
 
@@ -38,13 +38,20 @@ export default function Menu() {
 
                   <Title
                     order={1}
-                    fz={'var(--mantine-h1-font-size)'}
+                    fz={{
+                      base: 'xl',
+                      md: 'var(--mantine-h2-font-size)',
+                      lg: 'var(--mantine-h1-font-size)',
+                    }}
                     tt={'uppercase'}
+                    my={{ base: 'md', md: 0 }}
                   >
                     Burgher Menu $18 only
                   </Title>
 
-                  <Text>Hamburgher, Chips, Mix Sausages, Beer, Muffin</Text>
+                  <Text fz={{ base: 'sm', md: 'md' }}>
+                    Hamburgher, Chips, Mix Sausages, Beer, Muffin
+                  </Text>
                 </div>
 
                 <Group>
