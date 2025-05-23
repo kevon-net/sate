@@ -26,18 +26,18 @@ export const navLinks: NavLink[] = [
     link: '/shop',
     label: 'Shop',
   },
-  {
-    link: '/levels',
-    label: 'Levels',
-    subLinks: [
-      {
-        link: '/level1',
-        label: 'Level1',
-      },
-      {
-        link: '/level2',
-        label: 'Level2',
-      },
-    ],
-  },
+  // {
+  //   link: '/levels',
+  //   label: 'Levels',
+  //   subLinks: [
+  //     {
+  //       link: '/level1',
+  //       label: 'Level1',
+  //     },
+  //     {
+  //       link: '/level2',
+  //       label: 'Level2',
+  //     },
+  //   ],
+  // },
 ];
