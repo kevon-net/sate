@@ -23,6 +23,8 @@ import IntroSection from '@/components/layout/intros/section';
 import CardCtaMenu from '@/components/common/cards/cta/menu';
 import { menuCtaList } from '@/data/menu';
 import TabReservation from '@/components/common/tabs/reservation';
+import DividerFlatTwo from '@/components/common/dividers/flat/two';
+import DividerFlatThree from '@/components/common/dividers/flat/three';
 
 export default function Home() {
   return (
@@ -65,19 +67,7 @@ export default function Home() {
                 props={{
                   title: 'Some words about us',
                   desc: 'Cum doctus civibus efficiantur in imperdiet deterruisset.',
-                  subTitle: (
-                    <Group gap={0}>
-                      <Divider
-                        size={ICON_STROKE_WIDTH}
-                        w={{ base: 40, lg: 60 }}
-                        color="pri"
-                      />
-                      <Divider
-                        size={ICON_STROKE_WIDTH}
-                        w={{ base: 40, lg: 60 }}
-                      />
-                    </Group>
-                  ),
+                  subTitle: <DividerFlatTwo />,
                 }}
                 options={{ alignment: 'start' }}
               />
@@ -119,17 +109,7 @@ export default function Home() {
             props={{
               title: 'Our Daily Menu',
               desc: 'Cum doctus civibus efficiantur in imperdiet deterruisset.',
-              subTitle: (
-                <Group gap={0} justify={'center'}>
-                  <Divider size={ICON_STROKE_WIDTH} w={{ lg: 30 }} />
-                  <Divider
-                    size={ICON_STROKE_WIDTH}
-                    w={{ lg: 60 }}
-                    color="pri"
-                  />
-                  <Divider size={ICON_STROKE_WIDTH} w={{ lg: 30 }} />
-                </Group>
-              ),
+              subTitle: <DividerFlatThree />,
             }}
           />
 
@@ -265,19 +245,7 @@ export default function Home() {
                 props={{
                   title: 'Reserve a table',
                   desc: 'or Call us at 0344 32423453',
-                  subTitle: (
-                    <Group gap={0}>
-                      <Divider
-                        size={ICON_STROKE_WIDTH}
-                        w={{ base: 30, lg: 60 }}
-                        color="pri"
-                      />
-                      <Divider
-                        size={ICON_STROKE_WIDTH}
-                        w={{ base: 30, lg: 60 }}
-                      />
-                    </Group>
-                  ),
+                  subTitle: <DividerFlatTwo />,
                 }}
                 options={{ alignment: 'start' }}
               />
